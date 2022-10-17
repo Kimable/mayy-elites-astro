@@ -62,9 +62,9 @@ const { title } = Astro.props;
     <header>
       <!-- Dropdown Structure -->
       <ul id="dropdown1" class="dropdown-content">
-        <li><a href="primary">Primary Level</a></li>
-        <li><a href="secondary">Secondary Level</a></li>
-        <li><a href="advanced">Advanced Level</a></li>
+        <li><a href="/primary">Primary Level</a></li>
+        <li><a href="/secondary">Secondary Level</a></li>
+        <li><a href="/advanced">Advanced Level</a></li>
       </ul>
       <div class="navbar-fixed">
         <nav class="nav-wrapper cyan darken-4">
@@ -81,14 +81,14 @@ const { title } = Astro.props;
             </a>
             <ul class="right hide-on-med-and-down">
               <li><a href="/">Home</a></li>
-              <li><a href="about">About</a></li>
-              <li><a href="fees">Fees</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/fees">Fees</a></li>
               <li>
                 <a class="dropdown-trigger" href="#!" data-target="dropdown1"
                   >Learning Stages +</a
                 >
               </li>
-              <li><a class="" href="contact">Contact Us</a></li>
+              <li><a class="" href="/contact">Contact Us</a></li>
             </ul>
           </div>
         </nav>
@@ -102,19 +102,19 @@ const { title } = Astro.props;
           />
         </li>
         <li><a href="/">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="fees">Fees</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/fees">Fees</a></li>
         <li>
           <a class="dropdown-trigger" href="#!" data-target="dropdown2"
             >Learning Stages +</a
           >
         </li>
-        <li><a class="btn red accent-3" href="contact">Contact Us</a></li>
+        <li><a class="btn red accent-3" href="/contact">Contact Us</a></li>
       </ul>
       <ul id="dropdown2" class="dropdown-content cyan darken-4">
-        <li><a href="primary">Primary Level</a></li>
-        <li><a href="secondary">Secondary Level</a></li>
-        <li><a href="advanced">Advanced Level</a></li>
+        <li><a href="/primary">Primary Level</a></li>
+        <li><a href="/secondary">Secondary Level</a></li>
+        <li><a href="/advanced">Advanced Level</a></li>
       </ul>
     </header>
 
@@ -158,22 +158,23 @@ const { title } = Astro.props;
             <h5 class="white-text">Explore</h5>
             <ul>
               <li>
-                <a class="grey-text text-lighten-3" href="about">About us</a>
+                <a class="grey-text text-lighten-3" href="/about">About us</a>
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="contact">Contact us</a
+                <a class="grey-text text-lighten-3" href="/contact"
+                  >Contact us</a
                 >
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="homeschooling"
+                <a class="grey-text text-lighten-3" href="/homeschooling"
                   >Homeschooling</a
                 >
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="tuition">Tuition</a>
+                <a class="grey-text text-lighten-3" href="/tuition">Tuition</a>
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="programming"
+                <a class="grey-text text-lighten-3" href="/programming"
                   >Computer Science</a
                 >
               </li>
