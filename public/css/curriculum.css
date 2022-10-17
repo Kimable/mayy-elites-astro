@@ -1,0 +1,81 @@
+.primary-sec,
+.secondary-sec,
+.adv-col {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/young-cool-students-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+.secondary-sec {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/teacher-helping-student.jpg");
+  background-position: center;
+}
+.adv-col {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/group-discussion.jpg");
+  background-position: top-center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.primary-content,
+.secondary-content {
+  margin: 50px 0;
+}
+
+.subjects {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.subject1,
+.subject2,
+.subject3,
+.subject4,
+.subject5,
+.subject6 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  width: 100%;
+  height: 200px;
+  flex-basis: 30%;
+  margin: 2px;
+}
+
+.subjects h3 {
+  padding: 100px 0 0 10px;
+  color: white;
+}
+
+.subject1 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url("../img/math.jpg");
+  background-position: center;
+}
+.subject2 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url("../img/physics.jpg");
+  background-position: center;
+}
+
+/* Mobile styles */
+@media (max-width: 900px) {
+  .subjects {
+    flex-direction: column;
+  }
+  .subject1,
+  .subject2,
+  .subject3 {
+    flex-basis: 50%;
+    height: 300px;
+  }
+}

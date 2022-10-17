@@ -1,0 +1,227 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics  
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-156450350-3"></script>
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-156450350-3');
+  </script>-->
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!--Favicon-->
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+
+    <!--Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+
+    <!--Glider CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/glider.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <!--Fontawesome icons-->
+    <script
+      src="https://kit.fontawesome.com/5b37c5d16c.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="description"
+      content="Virtual learning for homeschooling students who want to stand out among the masses."
+    />
+    <!--page title-->
+    <title>{title} | Mayy Elites</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="primary">Primary Level</a></li>
+        <li><a href="secondary">Secondary Level</a></li>
+        <li><a href="advanced">Advanced Level</a></li>
+      </ul>
+      <div class="navbar-fixed">
+        <nav class="nav-wrapper cyan darken-4">
+          <div class="container">
+            <a href="/img/mayylogo.png" class="brand-logo"
+              ><img
+                style="width: 120px; height: 120px;"
+                src="/img/mayylogo.png"
+                alt="logo"
+              />
+            </a>
+            <a href="#" data-target="menu" class="sidenav-trigger"
+              ><i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="/">Home</a></li>
+              <li><a href="about">About</a></li>
+              <li><a href="fees">Fees</a></li>
+              <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                  >Learning Stages +</a
+                >
+              </li>
+              <li><a class="" href="contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="sidenav center cyan darken-4" id="menu">
+        <li>
+          <img
+            src="img/elder-sister-and-brother-studying-at-home-3769981.jpg"
+            class="responsive-img"
+            alt=""
+          />
+        </li>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="fees">Fees</a></li>
+        <li>
+          <a class="dropdown-trigger" href="#!" data-target="dropdown2"
+            >Learning Stages +</a
+          >
+        </li>
+        <li><a class="btn red accent-3" href="contact">Contact Us</a></li>
+      </ul>
+      <ul id="dropdown2" class="dropdown-content cyan darken-4">
+        <li><a href="primary">Primary Level</a></li>
+        <li><a href="secondary">Secondary Level</a></li>
+        <li><a href="advanced">Advanced Level</a></li>
+      </ul>
+    </header>
+
+    <!-- Content Goes Here -->
+    <slot />
+
+    <!--Footer goes here-->
+    <footer class="page-footer cyan darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l5 s12">
+            <h5 class="white-text">We are here for you</h5>
+            <p class="grey-text text-lighten-4">
+              Lets build your future together.
+            </p>
+          </div>
+          <!-- Stages of learning -->
+          <div class="col l4 s12">
+            <h5 class="white-text">Stages of Learning</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="primary">Primary</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="secondary"
+                  >Lower Secondary</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="secondary"
+                  >Upper Secondary</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="advanced">Advanced</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Explore pages -->
+          <div class="col l3 s12">
+            <h5 class="white-text">Explore</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="about">About us</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="contact">Contact us</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="homeschooling"
+                  >Homeschooling</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="tuition">Tuition</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="programming"
+                  >Computer Science</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="fees">School Fees</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <p>
+            <span id="copy"></span>
+            <span class="social right">
+              <span class="fontawesome-icons"
+                ><a href="https://www.facebook.com/mayyelites"
+                  ><i class="fab fa-facebook"></i>
+                </a>
+              </span>
+              <span class="fontawesome-icons"
+                ><a href="https://wa.me/+254719849455"
+                  ><i class="fab fa-whatsapp"></i>
+                </a>
+              </span>
+              <span class="fontawesome-icons"
+                ><a href="https://www.instagram.com/mayyelites/"
+                  ><i class="fab fa-instagram"></i>
+                </a>
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--JavaScript-->
+    <script is:inline src="/js/materialize.min.js"></script>
+    <script is:inline src="/js/glider.min.js"></script>
+    <script is:inline src="/js/app.js"></script>
+    <script>
+      // Dynamic year
+      const copy = document.getElementById("copy") as HTMLElement;
+      const year = new Date().getFullYear();
+      copy.innerHTML = `Mayy Elites &copy; ${year}`;
+    </script>
+  </body>
+</html>
+
+<style is:global></style>
