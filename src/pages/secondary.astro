@@ -5,10 +5,11 @@ import Subjects from "../components/Subjects.astro";
 
 <Layout title="Secondary Level">
   <div class="secondary-sec">
-    <div class="container white-text">
-      <h1>Secondary Level</h1>
-      <p>Key Stage 3 & 4
-      </p>
+    <div id="secondary-hero">
+      <div class="container white-text">
+        <h1>Secondary Level</h1>
+        <p>Key Stage 3 & 4</p>
+      </div>
     </div>
   </div>
   <div class="sec-content">
@@ -16,45 +17,65 @@ import Subjects from "../components/Subjects.astro";
     <div class="container section row black-text">
       <div class="col l5 s12">
         <h2>Lower Secondary</h2>
-        <img src="img/Girl-learning-illustration.png" alt="An illustration of a Student">
+        <img
+          src="img/Girl-learning-illustration.png"
+          alt="An illustration of a Student"
+        />
       </div>
-  
+
       <div class="col l7 s12">
         <p>
-          As learners broaden their perceptive and reasoning abilities, we structure the curriculum
-          and refine it to create an all rounded approach to learning. We encourage learners to
-          be creative, expressive, innovative and collaborative.
+          As learners broaden their perceptive and reasoning abilities, we
+          structure the curriculum and refine it to create an all rounded
+          approach to learning. We encourage learners to be creative,
+          expressive, innovative and collaborative.
         </p>
         <p>
-          With the flexibility the cambridge curriculum offers, our teachers work well with
-          our learners to formulate a suitable curriculum for each individual learner.
+          With the flexibility the cambridge curriculum offers, our teachers
+          work well with our learners to formulate a suitable curriculum for
+          each individual learner.
         </p>
       </div>
-  
     </div>
     <!-- Upper secondary -->
     <div class="container section row black-text">
       <div class="col l5 s12">
         <h2>Upper Secondary</h2>
-        <img src="img/collaboration.png" alt="Students collaborating">
+        <img src="/img/collaboration.png" alt="Students collaborating" />
       </div>
-  
+
       <div class="col l7 s12">
         <p>
-          As learners prepare for their IGCSE, we provide material with rich content and
-          teachers with expertise so that the student can be well equipped to sit for the exams
-          with confidence. Learners are encouraged to interact with variety of subjects and pick the ones
-          they are comfortable with.
+          As learners prepare for their IGCSE, we provide material with rich
+          content and teachers with expertise so that the student can be well
+          equipped to sit for the exams with confidence. Learners are encouraged
+          to interact with variety of subjects and pick the ones they are
+          comfortable with.
         </p>
         <p>
-          We have a pool of resources freely available to all our learners so that they
-          can be adequately and thoroughly prepared.
-          At this level we encourage creative thinking, innovative skills, research skills and problem solving
-          skills.
+          We have a pool of resources freely available to all our learners so
+          that they can be adequately and thoroughly prepared. At this level we
+          encourage creative thinking, innovative skills, research skills and
+          problem solving skills.
         </p>
       </div>
-  
     </div>
   </div>
-  <Subjects/>
+  <Subjects />
 </Layout>
+
+<style>
+  #secondary-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("/img/girl-online-class-min.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+</style>

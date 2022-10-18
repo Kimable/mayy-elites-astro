@@ -4,36 +4,55 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Advanced Level">
-  <div class="adv-col">
+  <div id="advanced-hero" class="adv-col">
     <div class="container white-text">
       <h1>As & A Level</h1>
-      <p>Pre University
-      </p>
+      <p>Pre University</p>
     </div>
   </div>
   <div class="primary-content">
     <div class="container section row">
       <div class="col l7 s12">
         <p>
-          AS and A Level provide an excellent preparation for University and college. The
-          Cambridge curriculum is quite flexible providing learners with many choices to pick
-          from. Learners have the freedom to choose subjects that are right for them based
-          on their own personal preferences.
+          AS and A Level provide an excellent preparation for University and
+          college. The Cambridge curriculum is quite flexible providing learners
+          with many choices to pick from. Learners have the freedom to choose
+          subjects that are right for them based on their own personal
+          preferences.
         </p>
         <p>
-          Our learners are taught to be independent thinkers and problem solvers. We endeavor
-          to make sure they have an in depth mastery of content and see the applicability
-          of what they are learning. At the end the learners should be able to make good judgment,
-          provide recommendations, present a well reasoned out explanation, think logically and
-          communicate effectively.
+          Our learners are taught to be independent thinkers and problem
+          solvers. We endeavor to make sure they have an in depth mastery of
+          content and see the applicability of what they are learning. At the
+          end the learners should be able to make good judgment, provide
+          recommendations, present a well reasoned out explanation, think
+          logically and communicate effectively.
         </p>
       </div>
       <div class="col l5 s12">
-        <img src="img/studying.png" alt="An illustration of a Student studying">
+        <img
+          src="/img/studying.png"
+          alt="An illustration of a Student studying"
+        />
       </div>
     </div>
   </div>
   <!-- Subjects -->
-  <Subjects/>
-
+  <Subjects />
 </Layout>
+
+<style>
+  #advanced-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("/img/girl-student-reading-min.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+</style>
