@@ -1,0 +1,44 @@
+---
+const faqs = [
+  {
+    que: "How Long is the free class?",
+    ans: "It is 1 hour long",
+  },
+  {
+    que: "Where will the class be held?",
+    ans: "The class will be conducted online via the zoom app.",
+  },
+  {
+    que: "Will I be charged for the class?",
+    ans: "No, the class is completely free!",
+  },
+  {
+    que: "What will I need for the class?",
+    ans: "You'll need a laptop or tablet, the zoom app installed, a stable internet and a place to write. That's all!",
+  },
+];
+---
+
+<div class="container section center">
+  <h2>Frequently Asked Questions</h2>
+  {
+    faqs.map(item => {
+      return (
+        <>
+          <h4>{item.que}</h4>
+          <p>{item.ans}</p>
+        </>
+      );
+    })
+  }
+</div>
+<style>
+  h2 {
+    text-decoration: underline;
+  }
+  h4 {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(224, 73, 73);
+  }
+</style>

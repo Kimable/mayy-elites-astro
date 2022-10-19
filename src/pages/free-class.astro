@@ -1,0 +1,98 @@
+---
+import FreeClassFAQs from "../components/FreeClassFAQs.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Free Math Class">
+  <!-- Hero Sec -->
+
+  <div id="free-class-hero">
+    <div class="container white-text">
+      <h1>Free Math Class</h1>
+      <p>
+        Access a completely free one on one math class for any topic that may be
+        bugging you. Interact with your teacher and ask any question you have.
+      </p>
+    </div>
+  </div>
+  <!-- Form Sec -->
+  <div class="container section">
+    <h3 class="center">Please fill this form to secure a slot</h3>
+    <form action="/php/free-class.php" method="POST">
+      <div class="row">
+        <div class="input-field col l6 m6 s12">
+          <i class="material-icons prefix">account_circles</i>
+          <input id="name" name="name" type="text" class="validate" required />
+          <label for="name">Your Name</label>
+        </div>
+        <div class="input-field col l6 m6 s12">
+          <i class="material-icons prefix">email</i>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            class="validate"
+            required
+          />
+          <label for="email">Your Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col l6 m6 s12">
+          <i class="material-icons prefix">phone</i>
+          <input id="phone" name="phone" type="text" class="validate" />
+          <label for="phone">Your Phone Number</label>
+        </div>
+        <div class="input-field col l6 m6 s12">
+          <i class="material-icons prefix">book</i>
+          <input id="grade" name="grade" type="text" class="validate" />
+          <label for="grade">Your Grade or Class</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">help</i>
+          <input id="topic" name="topic" type="text" class="validate" />
+          <label for="topic">Topic You Need Help With</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea
+            id="icon_prefix2"
+            name="message"
+            class="materialize-textarea"></textarea>
+          <label for="icon_prefix2">Any Additional Notes?</label>
+        </div>
+      </div>
+      <div class="submit-btn center">
+        <button
+          class="btn-large waves-effect waves-light cyan darken-4"
+          type="submit"
+          name="action"
+        >
+          Request Class
+          <i class="material-icons left">send</i>
+        </button>
+      </div>
+    </form>
+  </div>
+  <FreeClassFAQs />
+</Layout>
+
+<style>
+  #free-class-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("/img/girl-online-class-min.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+</style>
