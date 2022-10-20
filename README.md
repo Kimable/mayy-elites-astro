@@ -3,4 +3,4 @@
 ![students](https://mayyelites.com/img/slider3.jpg)
 
 Project built with Astro.js, and PHP.
-visit the website ![website](https://mayyelites.com)
+visit the [website](https://mayyelites.com)
